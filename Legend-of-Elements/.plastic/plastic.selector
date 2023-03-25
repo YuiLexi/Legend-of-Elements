@@ -1,4 +1,0 @@
-repository "Legend-of-Elements@miziku@cloud.cn"
-  path "/"
-    br "/main"
-    co "/main"
