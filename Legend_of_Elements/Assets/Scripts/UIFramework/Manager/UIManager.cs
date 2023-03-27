@@ -11,7 +11,7 @@ public class UIManager
     private static UIManager _instance;//存放当前类的实例对象，静态全局唯一
 
     private readonly string _uIPanelPrefabPath = Application.dataPath + @"/Resources/UIPanelPrefabs";//只读UIPanel的Prefab文件的路径
-    private readonly string _jsonPath = Application.dataPath + @"/Json/UIPanel/UIPanel.json";//存储UIPanel信息的Json文件路径
+    private readonly string _jsonPath = Application.streamingAssetsPath + @"/Json/UIPanel/UIPanel.json";//存储UIPanel信息的Json文件路径
 
     private List<UIPanel> _currentUIPanelList;//当前程序中的UIPanel列表
 
@@ -113,7 +113,7 @@ public class UIManager
         #endregion
 
         WriteJson(_jsonPath, _currentUIPanelList);
-        AssetDatabase.Refresh();
+        //AssetDatabase.Refresh();
     }
 
     /// <summary>
