@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - CardCell
+  - UIPanel
+  - CardUIPanel
+  - CardPanel_CD
+  - CardPanel_Unable
   layers:
   - Default
   - TransparentFX
